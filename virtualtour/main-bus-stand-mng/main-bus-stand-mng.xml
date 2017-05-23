@@ -1,0 +1,103 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/main-bus-stand-mng.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="main-bus-stand-mng.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	lookto(-156,-10,20);
+	    action(load2);
+		  lookto(180,0,50);
+		
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../main-bus-stand-smg/main-bus-stand-smg.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Main Bus Stand - Towords Shimoga"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-156.0" atv="-10.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Main Bus Stand - Towords Shimoga);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		  <!-- Hospital -->
+<action name="moveto5">
+	lookto(17,-9,20);
+	    action(load5);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load5">
+    
+	    loadpano(../hospital/hospital.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Jayachamarajendra Hospital"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="17.0" atv="-9.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Jayachamarajendra Hospital);"
+         onout=""
+         onclick="action(moveto5);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+
+
+</krpano>
+

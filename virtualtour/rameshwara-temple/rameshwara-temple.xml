@@ -1,0 +1,98 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/rameshwara-temple.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="rameshwara-temple.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  	  	lookto(13,0,20);
+	    action(load2);
+			  	lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../tunga-river/tunga-river.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Tunga River"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-50.0" atv="6.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Tunga River,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		  <action name="moveto3">
+		  	lookto(115,12,20);
+	    action(load3);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../car-street-car/car-street-car.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Car Street - Car Shed "
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="115.0" atv="12.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Car Street - Car Shed,txt );"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+</krpano>
+

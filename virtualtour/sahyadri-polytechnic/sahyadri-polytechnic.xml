@@ -1,0 +1,97 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<preview url="../bw/sahyadri-polytechnic.jpg" />
+	<display details="24" />
+
+	<image type="CYLINDER">
+		<cylinder url="sahyadri-polytechnic.jpg" />
+	</image>
+	
+	<!-- place hotspots here 3333333333333333-->
+
+	<action name="moveto4">	
+	  lookto(-140,3,20);	
+	    action(load4);
+			  lookto(0,0,50);
+	</action>
+	
+	<action name="load4"> 
+	    loadpano(../yedehalli-kere/yedehalli-kere.xml,null,KEEPALL,BLEND(2));	   
+    </action>
+	
+	<hotspot name="Yedehalli Kere"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-140" atv="3"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Yedehalli Kere);"
+         onout=""
+         onclick="action(moveto4);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+        />
+		
+			 <action name="moveto2">
+	 	  lookto(-153,5,20);
+	    action(load2);
+		 lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../krushi-kendra/krushi-kendra.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Krushi Kendra"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-153" atv="5.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext('Krushi Kendra',txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+</krpano>
+

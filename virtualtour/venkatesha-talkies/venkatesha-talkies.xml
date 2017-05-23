@@ -1,0 +1,100 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/venkatesha-talkies.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="venkatesha-talkies.jpg" />
+	</image>
+	
+	 <action name="moveto5">
+	 	  	lookto(-64,7,20);
+	    action(load5);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load5">
+    
+	    loadpano(../soppugudde/soppugudde.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Soppugudde"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-64" atv="7"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Soppugudde,txt);"
+         onout=""
+         onclick="action(moveto5);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+		 <!-- Civil court -->
+<action name="moveto4">
+		  	lookto(-163,5,20);
+	    action(load4);
+		  lookto(170,0,50);
+    </action>
+	
+	    <action name="load4">
+    
+	    loadpano(../civil-court-soppugudde/civil-court-soppugudde.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Civil Court"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-163.0" atv="5.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Soppugudde Near Civil Court,txt);"
+         onout=""
+         onclick="action(moveto4);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+</krpano>
+

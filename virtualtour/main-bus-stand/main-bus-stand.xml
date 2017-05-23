@@ -1,0 +1,54 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/main-bus-stand.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="main-bus-stand.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  lookto(0,0,50);
+	    action(load2);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../church-azad-road/church-azad-road.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Agumbe Bus Stand"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="0.0" atv="0.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Church Circle);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+</krpano>
+

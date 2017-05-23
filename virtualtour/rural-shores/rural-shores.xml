@@ -1,0 +1,59 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/rural-shores.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="rural-shores.jpg" />
+	</image>
+	
+	<!-- place hotspots here 3333333333333333-->
+
+ <action name="moveto4">
+	  lookto(40,-4,20);
+	    action(load4);
+			  lookto(180,0,50);
+    </action>
+	
+	    <action name="load4">
+    
+	    loadpano(../bettamakki/bettamakki.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Bettamakki"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="40" atv="-4"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Bettamakki,txt);"
+         onout=""
+         onclick="action(moveto4);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+
+</krpano>
+

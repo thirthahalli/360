@@ -1,0 +1,55 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/balebailu.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="balebailu.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  lookto(0,0,50);
+	    action(load2);
+			  lookto(8,-2,20);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../agumbe-bus-stand/agumbe-bus-stand.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Agumbe Bus Stand"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="8" atv="-2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Agumbe Bus Stand,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+</krpano>
+

@@ -1,0 +1,140 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/bettamakki.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="bettamakki.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  lookto(165,-3,20);
+	    action(load2);
+			  lookto(180,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../agumbe-bus-stand/agumbe-bus-stand.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Agumbe Bus Stand"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="165.0" atv="-3.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Agumbe Bus Stand,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 	<!-- place hotspots here 22222222222222222222-->
+		<action name="moveto3">	 
+	  lookto(22,2,20);		
+			action(load3);
+				  lookto(0,0,50);
+		</action>
+	
+	    <action name="load3">  
+	    loadpano(../rural-shores/rural-shores.xml,null,KEEPALL,BLEND(2));	   
+    </action>
+	
+	<hotspot name="Rural Shores BPO"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="22" atv="2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Rural Shores BPO,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+<!-- place hotspots here 3333333333333333-->
+
+	<action name="moveto4">	 
+		  lookto(-55,-2,20);
+	    action(load4);
+			  lookto(-115,0,50);
+	</action>
+	
+	<action name="load4"> 
+	    loadpano(../yedehalli-kere/yedehalli-kere.xml,null,KEEPALL,BLEND(2));	   
+    </action>
+	
+	<hotspot name="Yedehalli Kere"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-55" atv="-2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Yedehalli Kere,txt);"
+         onout=""
+         onclick="action(moveto4);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+        />
+
+
+</krpano>
+

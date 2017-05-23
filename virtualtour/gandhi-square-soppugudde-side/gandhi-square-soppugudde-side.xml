@@ -1,0 +1,151 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/gandhi-square-soppugudde-side.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="gandhi-square-soppugudde-side.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	 lookto(-2,5,20);
+	    action(load2);
+			  lookto(105,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../church-azad-road/church-azad-road.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Church Circle"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-2" atv="5"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Church Circle,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 <!-- place hotspots here 22222222222222222222-->
+
+ <action name="moveto3">
+	   lookto(-175,5,20);
+	    action(load3);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../gandhi-square/gandhi-square.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Gandhi Square"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-175" atv="5"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Gandhi Square,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+
+
+	<!-- place hotspots here 3333333333333333-->
+
+ <action name="moveto4">
+	  lookto(60,6,20);
+	    action(load4);
+		  lookto(-60,0,50);
+    </action>
+	
+	    <action name="load4">
+    
+	    loadpano(../vinayaka-talkies-road/vinayaka-talkies-road.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Vinayaka Talkies Road"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="60" atv="6"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Vinayaka Talkies Road,txt);"
+         onout=""
+         onclick="action(moveto4);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+
+</krpano>
+

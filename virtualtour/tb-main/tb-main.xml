@@ -1,0 +1,103 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/tb-main.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="tb-main.jpg" />
+	</image>
+	
+			 <!-- Vagdevi School -->
+		 	
+	 <action name="moveto5">
+	  	  	lookto(-32,0,20);
+	    action(load5);
+		lookto(160,0,50);
+    </action>
+	
+	    <action name="load5">
+    
+	    loadpano(../vagdevi-school/vagdevi-school.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Vagdevi School"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-32.0" atv="0.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Vagdevi School,txt);"
+         onout=""
+         onclick="action(moveto5);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		  <!-- Travellers Bunglow-->
+		 
+		 	 <action name="moveto3">
+	  	  	lookto(158,8,20);
+	    action(load3);
+		lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../tb-garden/tb-garden.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Travellers Bunglow - Garden"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="158.0" atv="8.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Travellers Bunglow - Garden,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+</krpano>
+

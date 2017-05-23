@@ -1,0 +1,99 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/civil-court-soppugudde.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="civil-court-soppugudde.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	 	  	lookto(178,4,20);
+	    action(load2);
+		 lookto(-10,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../koppa-circle/koppa-circle.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Circle"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-178.0" atv="4.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Koppa Circle,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+ <!-- place hotspots here 22222222222222222222-->
+
+ <action name="moveto3">
+	  	  	lookto(-28,-6,20);
+	    action(load3);
+	  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../venkatesha-talkies/venkatesha-talkies.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Venkatesha Talkies"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-28" atv="-6"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Venkatesha Talkies,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+</krpano>
+

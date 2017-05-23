@@ -1,0 +1,100 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/vagdevi-school.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="vagdevi-school.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	 	  	lookto(175,6,20);
+	    action(load2);
+		 lookto(-100,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../koppa-circle/koppa-circle.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Koppa Circle"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="175.0" atv="6.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Koppa Circle,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 <!-- Tunga Bridge -->
+		  <action name="moveto3">
+	  	lookto(0,6,20);
+	    action(load3);
+			  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../tunga-bridge/tunga-bridge.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Tunga Bridge"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="0.0" atv="6.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Tunga Bridge,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+</krpano>
+

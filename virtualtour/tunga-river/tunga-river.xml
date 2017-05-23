@@ -1,0 +1,103 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/tunga-river.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="tunga-river.jpg" />
+	</image>
+	
+
+		 
+	 <action name="moveto2">
+	  	lookto(-85,-8,20);
+	    action(load2);
+			  lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../rameshwara-temple/rameshwara-temple.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Rameshwara Temple"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-85.0" atv="-8.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Rameshwara Temple,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 
+		 <!-- Tunga Bridge -->
+		  <action name="moveto3">
+	  	lookto(-15,2,20);
+	    action(load3);
+			  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../tunga-bridge/tunga-bridge.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Tunga Bridge"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-15.0" atv="2.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Tunga Bridge,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+</krpano>
+

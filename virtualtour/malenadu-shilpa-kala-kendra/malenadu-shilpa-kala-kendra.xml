@@ -1,0 +1,100 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/malenadu-shilpa-kala-kendra.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="malenadu-shilpa-kala-kendra.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	 lookto(120,-5.0,20);
+	    action(load2);
+		 lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../tudki/tudki.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Tudki - Tunga College Entrance"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="120.0" atv="-5.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Tudki - Tunga College Entrance);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 
+	 <action name="moveto3">
+	lookto(-110,-5,20);
+	    action(load3);
+		   lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../ananeya-temple/ananeya-temple.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Anjaneya Temple"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-110.0" atv="-5.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Anjaneya Temple);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+
+
+</krpano>
+

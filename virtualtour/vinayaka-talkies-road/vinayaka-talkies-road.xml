@@ -1,0 +1,101 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/vinayaka-talkies-road.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="vinayaka-talkies-road.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+ lookto(-76,2,20);
+	    action(load2);
+			  lookto(180,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../soppugudde/soppugudde.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Soppugudde"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-76" atv="2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Soppugudde,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+		 
+		 <!-- Gandhi -->
+<action name="moveto3">
+	   lookto(105,2,20);
+	    action(load3);
+		  lookto(180,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../gandhi-square-soppugudde-side/gandhi-square-soppugudde-side.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Gandhi Square"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="105" atv="2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Gandhi Square,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+
+</krpano>
+

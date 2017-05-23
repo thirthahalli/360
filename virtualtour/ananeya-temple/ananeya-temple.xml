@@ -1,0 +1,96 @@
+<krpano>
+
+    <include url="../plugins.xml" />
+	<display details="24" />
+<preview url="../bw/ananeya-temple.jpg" />
+	<image type="CYLINDER">
+		<cylinder url="ananeya-temple.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  lookto(-80,0,20);
+	    action(load2);
+		lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../malenadu-shilpa-kala-kendra/malenadu-shilpa-kala-kendra.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Malenadu Shilpa Kala Kendra"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-80.0" atv="0.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Malenadu Shilpa Kala Kendra);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+	 <action name="moveto3">
+	lookto(135,-8,20);
+	    action(load3);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../kushavathi/kushavathi.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Kushavathi"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="135.0" atv="-8.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Kushavathi);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+
+</krpano>
+

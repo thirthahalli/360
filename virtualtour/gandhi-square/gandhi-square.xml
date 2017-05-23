@@ -1,0 +1,98 @@
+<krpano>
+<preview url="../bw/gandhi-square.jpg" />
+    <include url="../plugins.xml" />
+	<display details="24" />
+
+	<image type="CYLINDER">
+		<cylinder url="gandhi-square.jpg" />
+	</image>
+	
+	 <action name="moveto2">
+	  lookto(-18,6,20);
+	    action(load2);
+		 lookto(0,0,50);
+    </action>
+	
+	    <action name="load2">
+    
+	    loadpano(../gandhi-square-car-street/gandhi-square-car-street.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Gandhi Square Car Street Entrance"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="-18.0" atv="6.0"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Gandhi Square Car Street Entrance,txt);"
+         onout=""
+         onclick="action(moveto2);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+         />
+ <action name="moveto3">
+	   lookto(160,2,20);
+	    action(load3);
+		  lookto(0,0,50);
+    </action>
+	
+	    <action name="load3">
+    
+	    loadpano(../gandhi-square-soppugudde-side/gandhi-square-soppugudde-side.xml,null,KEEPALL,BLEND(2));
+	   
+    </action>
+
+	
+	<hotspot name="Gandhi Square"
+         url="../hotspot_ani.swf"
+         alturl="..."
+         keep="false"
+         devices="all"
+         visible="true"
+         enabled="true"
+         handcursor="true"
+         maskchildren="false"
+         zorder=""
+         style=""
+         ath="160" atv="2"
+         edge="center"
+         zoom="true"
+         distorted="false" rx="0.0" ry="0.0" rz="0.0"
+         width="" height=""
+         scale="1.0"
+         altscale=""
+         rotate="0.0"
+         alpha="1.0"
+         onover=""
+         onhover="showtext(Gandhi Square Soppugudde Road Entrance,txt);"
+         onout=""
+         onclick="action(moveto3);"
+         ondown=""
+         onup=""
+         onloaded=""
+         altonloaded=""
+
+
+         />
+
+</krpano>
+
